@@ -100,7 +100,7 @@ th {
 
 /* GENERAL */
 
-html{
+html {
     font-size: 16px;
 }
 
@@ -139,6 +139,17 @@ a {
     transition: color .3s;
 }
 
+li {
+    font-family: "Tahoma Regular";
+    color: #ffeaee;
+    font-size: .6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* HEADER */
 
 .topbar {
@@ -173,10 +184,44 @@ a {
 .menu-button:hover {
     color: #ffeaee;
     border: solid 1px #ffeaee;
+    transition: .3s;
 }
 
 /* BANNER */
 
+.banner {
+    position: relative;
+}
+
+.banner-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner-video {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5); */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    z-index: 2;
+}
 
 .banner-text-welcome {
     font-family: 'Trajan Pro Regular', serif;
@@ -191,13 +236,183 @@ a {
     font-size: 1.5rem;
 }
 
+/* HOME SECTION */
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 960px;
+}
+
+.block-cheffe {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.block-img {
+    text-align: center;
+}
+
+.rounded-img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.block-body {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.signature {
+    font-family: "Vilvaldi";
+    font-size: 1.8rem;
+}
+
+.block-body p {
+    margin-bottom: 1.5rem;
+    margin-top: .9rem;
+}
+
+.btn {
+    color: #5bc0eb;
+    border: solid 1px #5bc0eb;
+    margin-top: 10px;
+    padding: 5px 40px;
+}
+
+.btn:hover {
+    color: #ffb600;
+    border: solid 1px #ffb600;
+    transition: .3s;
+}
+
+/* SECTION SLIDER */
+
+.container-slider {
+    padding: 50px 0;
+    background-image: url(/public/assets/img/slider-section.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.block-slider {
+    background-color: rgba(36, 36, 36, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.arrow {
+    width: 150px;
+}
+
+.arrow-left,
+.arrow-right {
+    margin: 0 20px;
+}
+
+/* SECTION MOSAIK */
+
+.block-body-mosaik {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.block-img-mosaik {
+    margin: 25px 0;
+}
+
+.block-img-bottom {
+    display: none;
+}
+
+/* SECTION-RESERVE */
+
+.container-reserve {
+    padding: 50px 0;
+    background-image: url(/public/assets/img/reserve-section.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.block-reserve {
+    background-color: rgba(36, 36, 36, 0.8);
+    text-align: center;
+    padding: 25px 0;
+}
+
+.btn-reserve {
+    margin: 30px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 40px 30px;
+}
+
+.footer-columns,
+.footer-credits {
+    text-align: center;
+}
+
+.footer-column {
+    margin-bottom: 2rem;
+}
+
+.footer-column p,
+.footer-credits p {
+    font-size: .6rem;
+}
+
+.footer-title {
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.footer a {
+    color: #5bc0eb;
+    font-family: "Tohama Reguler";
+}
+
+.footer a:hover {
+    color: #ffb600;
+    transform: .3s;
+}
+
+.footer-credits {
+    font-size: 0.7rem;
+    margin-top: .5rem;
+}
+
+.footer-credits span {
+    font-family: "Trajan Pro Bold";
+    text-transform: uppercase;
+    color: #ffb600;
+}
+
+.legal-mentions {
+    font-size: 0.6rem;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 620px) {
     html {
         font-size: 16px;
     }
-    
+
     /* HEADER */
 
     .nav-item {
@@ -219,9 +434,55 @@ a {
         padding: 5px 9px;
     }
 
+    /* SECTION SLIDER */
+
+    .block-slider {
+        padding: 20px;
+    }
+
+    .arrow {
+        width: 50px;
+    }
+
+    /* SECTION MOSAIK */
+
+    .block-body-mosaik {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 960px;
+    }
+
+    .block-img-bottom {
+        display: block;
+    }
+
+    .block-img-mosaik img {
+        width: 200px;
+        height: auto;
+        margin: 10px 10px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+
+    /* FOOTER */
+
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 300px;
+        margin-right: 50px;
+    }
+
 }
 
 @media only screen and (min-width: 920px) {
+
+    /* HEADER */
 
     .topbar {
         display: flex;
@@ -230,7 +491,7 @@ a {
         margin: 0 auto;
         padding: 0;
     }
-    
+
     .logo {
         margin-right: auto;
     }
@@ -248,5 +509,59 @@ a {
         padding: 8px 13px;
     }
 
+    /* HOME SECTION */
+
+    .container {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .block-cheffe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-img {
+        width: auto;
+        margin-right: 50px;
+    }
+
+    .block-body {
+        width: 1000px;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    /* SECTION SLIDER */
+
+    .block-slider,
+    .block-reserve {
+        margin: 0 150px;
+        border-radius: 5px;
+    }
+
+    .block-img-mosaik img {
+        width: 275px;
+        height: auto;
+        margin: 10px 10px;
+    }
+
+    /* SECTION MOSAIK */
+
+    .btn-mosaik {
+        margin-bottom: 20px;
+    }
+
+    /* SECTION RESERVE */
+
+    .block-reserve {
+        margin: 0 300px;
+        border-radius: 5px;
+    }
+
+    /* FOOTER */
 
 }

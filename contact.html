@@ -34,7 +34,7 @@
                     <a href="/menu.html" title="Plats" class="nav-item">Nos plats</a>
                     <a href="/price.html" title="Prix" class="nav-item">Nos formules et prix</a>
                     <a href="/cheffe.html" title="La cheffe" class="nav-item">La cheffe et son équipe</a>
-                    <a href="/contact.html" title="Contact" class="nav-item">Nous contacter  </a>
+                    <a href="/contact.html" title="Contact" class="nav-item">Nous contacter </a>
                 </div>
             </nav>
             <div class="reservation">
@@ -47,13 +47,15 @@
     <main>
 
         <!-- BANNER -->
-        <section class="banner">
-            <div class="banner-video">
-                <video src=""></video>
-            </div>
-            <div class="banner-text">
-                <p class="banner-text-welcome">Contactez-nous</p>
-                <h1 class="banner-text-title">Une expérience culinaire<br>inoubliable</h1>
+        <section class="banner" id="banner">
+            <div class="banner-container">
+                <div class="banner-video">
+                    <video src="/public/assets/video/banner-contact.mp4" height="100" loop autoplay></video>
+                </div>
+                <div class="banner-text">
+                    <p class="banner-text-welcome">Contactez-nous</p>
+                    <h1 class="banner-text-title">Une expérience culinaire<br>inoubliable</h1>
+                </div>
             </div>
         </section>
 
@@ -80,50 +82,68 @@
         </section>
 
         <!-- RESERVATION -->
-        <section class="reservation">
-            <h2>Réservation</h2>
-            <p>Réservation par téléphone au : +33(0)3 28 00 00 00</p>
-            <p>ou</p>
-            <p>En cliquant sur le bouton ci-dessous</p>
-            <button><a href="/reserve.html">Réserver une table</a></button>
+        <section class="section-reserve">
+            <div class="container-reserve">
+                <div class="block-reserve">
+                    <h2 class="title">Réservation</h2>
+                    <p>Réservation par téléphone au : +33(0)3 28 00 00 00</p>
+                    <p>ou</p>
+                    <p>En cliquant sur le bouton ci-dessous</p>
+                    <div class="btn-reserve">
+                        <a href="/reserve.html" class="btn">Réserver une table</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="informations">
-            <h4>Informations</h4>
-            <p>3 rue Cabane des Pécheurs</p>
-            <p>59123 Bray-Dunes</p>
-            <p>(Face à la mer)</p>
-            <p>TEL : +33(0) 28 00 00 00</p>
-            <p>MAIL : orangestreet@live.fr</p>
-        </div>
-        <div class="horaires">
-            <h4>Horaires</h4>
-            <p>Déjeuner : De 11h30 à 15h</p>
-            <p>Diner : De 18h30 à 23h</p>
-            <p>Ouvert toute l'année</p>
-            <p>Fermeture hebdomadaire : Le mardi</p>
-        </div>
-        <div class="social-media">
-            <h4>Réseaux sociaux</h4>
-            <div class="social-media-logo">
-                <a href="" title="Facebook">
-                    <img src="" alt="Logo Facebook">
-                </a>
-                <a href="" title="Instagram">
-                    <img src="" alt="Logo Instagram">
-                </a>
-                <a href="" title="YouTube">
-                    <img src="" alt="Logo YouTube">
-                </a>
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div class="footer-title">
+                        <h4>Informations</h4>
+                    </div>
+                    <p>3 rue Cabane des Pécheurs</p>
+                    <p>59123 Bray-Dunes</p>
+                    <p>(Face à la mer)</p>
+                    <p>TEL : +33(0) 28 00 00 00</p>
+                    <p>MAIL : <a href="mailto:orangestreet@live.fr">orangestreet@live.fr</a></p>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-title">
+                        <h4>Horaires</h4>
+                    </div>
+                    <ul>
+                        <li>Déjeuner : De 11h30 à 15h</li>
+                        <li>Diner : De 18h30 à 23h</li>
+                        <li>Ouvert toute l'année</li>
+                        <li>Fermeture : Le mardi</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-title">
+                        <h4>Réseaux sociaux</h4>
+                    </div>
+                    <div class="footer-logos">
+                        <a href="https://www.facebook.com/lalchimiste2compostelle" title="Facebook">
+                            <img src="/public/assets/img/Facebook.png" alt="Logo Facebook" width="50">
+                        </a>
+                        <a href="https://www.instagram.com/lalchimiste_creations/" title="Instagram">
+                            <img src="/public/assets/img/instagram.png" alt="Logo Instagram" width="50">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCnez55mgM1Cpp3RMYJ5Xnkg" title="YouTube">
+                            <img src="/public/assets/img/youtube.png" alt="Logo YouTube" width="50">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>Tous droits réservés - 2023 L'Alchimiste Créations</p>
-            <a href="" title="Mentions légales">Mentions légales</a>
+            <div class="footer-credits">
+                <p>Tous droits réservés - 2023 <span>L'Alchimiste Créations</span></p>
+                <a href="/legals-mentions.html" title="Mentions légales" class="legal-mentions">Mentions légales</a>
+            </div>
         </div>
 
     </footer>
