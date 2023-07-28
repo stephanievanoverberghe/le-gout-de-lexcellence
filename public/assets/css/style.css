@@ -217,9 +217,6 @@ img {
     justify-content: center;
     align-items: center;
     color: #fff;
-    /* background-color: rgba(0, 0, 0, 0.6); */
-    /* text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5); */
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
     z-index: 2;
 }
 
@@ -239,9 +236,10 @@ img {
 /* HOME SECTION */
 
 .container {
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
     max-width: 960px;
+    text-align: center;
 }
 
 .block-cheffe {
@@ -323,7 +321,7 @@ img {
 
 .block-body-mosaik {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0 40px 0;
 }
 
 .block-img-mosaik {
@@ -354,6 +352,78 @@ img {
     margin: 30px;
 }
 
+/* MENU SECTION */
+
+.container-menu {
+    margin-bottom: 40px;
+}
+
+.title-body {
+    color: #5bc0eb;
+}
+
+.container-left {
+    display: none;
+}
+
+.block-plates-body {
+    margin: 10px 0 50px 0;
+}
+
+.block-plates-img img {
+    border-radius: 50%;
+    margin: 10px 0 0 0;
+}
+
+.block-plates-body p {
+    margin: 15px 0 10px 0;
+}
+
+/* SECTION FORMULAS */
+
+.block-formula-img {
+    margin: 10px 0 10px 0;
+}
+
+.btn-formula {
+    margin: 20px 0 50px 0;
+}
+
+/* SECTION MENU-CARD */
+
+.block-menu-card {
+    margin: 0 0 40px 0;
+}
+
+.menu-body {
+    margin: 10px 0;
+}
+
+.card {
+    margin: 20px 0 50px 0;
+}
+
+th {
+    font-family: "Trajan Pro Bold";
+}
+
+td {
+    color: #ffeaee;
+    padding: 10px 10px;
+}
+
+.menu-body td:nth-child(2) {
+    color: #ffb600;
+}
+
+.menu-body {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-img {
+    margin: 0 0 20px 0;
+}
 
 /* FOOTER */
 
@@ -462,9 +532,101 @@ img {
         margin: 10px 10px;
     }
 
+    /* SECTION MENU */
+
+    .container-left {
+        display: block;
+    }
+
+    .block-menu-plate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px 20px 20px;
+    }
+
+    .block-plates-img {
+        width: 600px;
+    }
+
+    .block-plates-body {
+        width: 600px;
+    }
+
+    .container-left .block-plates-body {
+        text-align: right;
+    }
+
+    .container-right .block-plates-body {
+        text-align: left;
+    }
+
+    /* SECTION MENU CARD */
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 10px 10px;
+    }
+
+    .menu-card-img {
+        width: 400px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .menu-body {
+        text-align: left;
+        margin: 0 0 0 20px;
+        width: 800px;
+    }
+
+    .menu-body td:nth-child(2) {
+        text-align: right;
+    }
+
+    tbody {
+        text-align: left;
+    }
+
+    .menu-body table {
+        width: 100%; 
+    }
+
+    .menu-body th,
+    .menu-body td {
+        padding: 5px;
+        font-size: .8rem;
+    }
+
+    .menu-body td:first-child {
+        text-align: left;
+    }
+
+    .menu-body td:last-child {
+        text-align: right; 
+    }
+
 }
 
 @media only screen and (min-width: 700px) {
+
+    .block-formulas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 10px 10px;
+    }
+
+    .block-formula {
+        margin: 0 10px 0 10px;
+    }
+
+    .title-body-formula {
+        color: #5bc0eb;
+        font-size: .8rem;
+    }
 
     /* FOOTER */
 
@@ -562,6 +724,29 @@ img {
         border-radius: 5px;
     }
 
-    /* FOOTER */
+    /* SECTION FORMULAS */
+
+    .block-formulas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px 20px 20px;
+    }
+
+    .block-formula {
+        margin: 0 30px 0 30px;
+    }
+
+    .title-body-formula {
+        color: #5bc0eb;
+        font-size: .8rem;
+    }
+
+    /* SECTION MENU CARD */
+
+    .menu-body th,
+    .menu-body td {
+        padding: 5px;
+    }
 
 }
