@@ -515,6 +515,21 @@ td {
     height: 250px;
 }
 
+/* SECTION CHEFFE ET SON EQUIPE */
+
+.title-blue {
+    color: #5bc0eb;
+}
+
+.section-cheffe p {
+    text-align: justify;
+}
+
+.section-cheffe img {
+    margin: 20px 0 0 0;
+    border-radius: 5px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -564,6 +579,21 @@ td {
 
 .legal-mentions {
     font-size: 0.6rem;
+}
+
+/* SECTION MENTIONS LEGALES */
+
+.block-body-legals-mentions {
+    padding: 20px 0;
+}
+
+.section-legals-mentions span {
+    color: #ffb600;
+}
+
+.section-legals-mentions p {
+    padding: 5px 0;
+    text-align: left;
 }
 
 /* MEDIA QUERIES */
@@ -715,6 +745,18 @@ td {
 
     .map {
         height: 460px;
+    }
+
+    /* SECTION CHEFFE ET SON EQUIPE */
+
+    .section-cheffe {
+        margin: 0 150px;
+    }
+
+    /* SECTION LEGALS MENTIONS */
+
+    .block-body-legals-mentions {
+        padding: 20px 125px;
     }
 
 }
