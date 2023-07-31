@@ -156,16 +156,10 @@ img {
     font-size: .75rem;
     text-transform: uppercase;
     text-align: center;
-    padding: 20px 0;
 }
-
 
 .nav-item:hover {
     color: #5bc0eb;
-}
-
-.logo {
-    margin-bottom: 10px;
 }
 
 .nav-item {
@@ -425,6 +419,102 @@ td {
     margin: 0 0 20px 0;
 }
 
+/* SECTION CONTACT */
+
+.container-contact,
+.container-reserved {
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.section-contact input,
+.section-reserved select,
+.section-reserved input,
+.section-contact textarea {
+    width: 100%;
+    background-color: #364e58;
+    border: none;
+    font-size: 1rem;
+    color: #ffeaee;
+    font-family: "Tahoma Regular", sans-serif;
+    border-radius: 3px;
+}
+
+.section-contact input:focus,
+.section-reserved select:focus,
+.section-reserved input:focus,
+.section-contact textarea:focus {
+    background-color: rgba(54, 78, 88, .1);
+}
+
+.section-reserved .contact-form-row {
+    margin-top: 30px;
+}
+
+.section-contact input,
+.section-reserved select,
+.section-reserved input {
+    margin-bottom: 15px;
+    height: 40px;
+    padding: 0 0.5rem;
+}
+
+.section-contact textarea {
+    padding: 10px 0.5rem;
+}
+
+.section-contact input::placeholder,
+.section-contact textarea::placeholder {
+    color: #ffeaee;
+}
+
+.contact-form {
+    margin: 0 20px 0 20px;
+    color: #ffeaee;
+}
+
+.button {
+    font-family: "Trajan Pro Bold", serif;
+    background-color: #242424;
+    color: #5bc0eb;
+    border: solid 1px #5bc0eb;
+    margin-top: 10px;
+    padding: 5px 40px;
+    width: 100%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    color: #ffb600;
+    border: solid 1px #ffb600;
+    transition: .3s;
+}
+
+/* SECTION RESERVED */
+
+.section-reserved select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.section-reserved select {
+    background: 
+        #364e58 
+        no-repeat 
+        right 
+        0.5rem 
+        center 
+        url(/public/assets/img/arrow-down.png);
+    background-size: 15px;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -591,7 +681,7 @@ td {
     }
 
     .menu-body table {
-        width: 100%; 
+        width: 100%;
     }
 
     .menu-body th,
@@ -605,7 +695,26 @@ td {
     }
 
     .menu-body td:last-child {
-        text-align: right; 
+        text-align: right;
+    }
+
+    /* SECTION CONTACT */
+
+    .section-contact input,
+    .section-reserved input,
+    .section-reserved select,
+    .section-contact textarea {
+        width: 75%;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    /* SECTION RESERVED */
+
+    .map {
+        height: 460px;
     }
 
 }
@@ -747,6 +856,17 @@ td {
     .menu-body th,
     .menu-body td {
         padding: 5px;
+    }
+
+    /* SECTION CONTACT */
+
+    /* SECTION CONTACT */
+
+    .section-contact input,
+    .section-reserved input,
+    .section-reserved select,
+    .section-contact textarea {
+        width: 90%;
     }
 
 }

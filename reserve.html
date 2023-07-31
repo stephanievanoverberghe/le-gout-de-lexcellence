@@ -34,7 +34,7 @@
                     <a href="/menu.html" title="Plats" class="nav-item">Nos plats</a>
                     <a href="/price.html" title="Prix" class="nav-item">Nos formules et prix</a>
                     <a href="/cheffe.html" title="La cheffe" class="nav-item">La cheffe et son équipe</a>
-                    <a href="/contact.html" title="Contact" class="nav-item">Nous contacter  </a>
+                    <a href="/contact.html" title="Contact" class="nav-item">Nous contacter </a>
                 </div>
             </nav>
             <div class="reservation">
@@ -59,43 +59,54 @@
             </div>
         </section>
 
-        <!-- CONTACT US -->
-        <section class="contact-us">
-            <h2>Une table en amoureux, un dîner d'affaire,<br>un repas familiale ? Réservez dès à présent</h2>
-            <p>A partir de 6 personnes, merci de nous contacter par téléphone</p>
-            <form action="" method="post">
-                <div class="couverts">
-                    <select name="couverts" id="couverts-select">
-                        <option value="2">2 couverts</option>
-                        <option value="3">3 couverts</option>
-                        <option value="4">4 couverts</option>
-                        <option value="5">5 couverts</option>
-                    </select>
+        <!-- SECTION RESERVE -->
+        <section class="section-reserved" id="reserved">
+            <div class="container container-reserved">
+                <div class="block-reserved">
+                    <h2 class="title">Une table en amoureux, un dîner d'affaire,<br>un repas familial ? Réservez dès à
+                        présent</h2>
+                    <p>A partir de 6 personnes, merci de nous contacter par téléphone au +33 (0)3 28 00 00 00</p>
                 </div>
-                <div class="calendar">
-                    <select name="calendar" id="calendar-select">
-                        <option value="15">samedi 15 juillet</option>
-                    </select>
-                </div>
-                <div class="hour">
-                    <select name="hour" id="hour">
-                        <option value="19">19h00</option>
-                    </select>
-                </div>
-                <div class="button">
-                    <button type="submit">Réserver</button>
-                </div>
-            </form>
+
+                <form action="#" method="post" class="contact-form">
+                    <div class="contact-form-row">
+                        <select name="couverts" id="couverts">
+                            <option value="1">1 couverts</option>
+                            <option value="2">2 couverts</option>
+                            <option value="3">3 couverts</option>
+                            <option value="4">4 couverts</option>
+                            <option value="5">5 couverts</option>
+                        </select>
+                        <input type="date" id="date" name="date">
+                        <select name="hour" id="hour">
+                            <option value="12">12h00</option>
+                            <option value="13">13h00</option>
+                            <option value="19">19h00</option>
+                            <option value="20">20h00</option>
+                            <option value="21">21h00</option>
+                            <option value="22">22h00</option>
+                        </select>
+                    </div>
+
+                    <div class="btn-contact">
+                        <button type="submit" class="button">Réserver</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <section class="google-maps">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20054.692081766894!2d2.506076636022213!3d51.0745679899361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc91648584290b%3A0x40af13e81647260!2s59123%20Bray-Dunes!5e0!3m2!1sfr!2sfr!4v1689174164669!5m2!1sfr!2sfr"
-                width="1070" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe 
+            class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.9504822826824!2d2.5160544658899595!3d51.07869271693702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc9179d846fadd%3A0x4eaf96ad316822f8!2sAu%20Saint-Martin!5e0!3m2!1sfr!2sfr!4v1690813624268!5m2!1sfr!2sfr"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
-        
+
 
     </main>
 
@@ -110,7 +121,7 @@
                     <p>3 rue Cabane des Pécheurs</p>
                     <p>59123 Bray-Dunes</p>
                     <p>(Face à la mer)</p>
-                    <p>TEL : +33(0) 28 00 00 00</p>
+                    <p>TEL : +33(0)3 28 00 00 00</p>
                     <p>MAIL : <a href="mailto:orangestreet@live.fr">orangestreet@live.fr</a></p>
                 </div>
                 <div class="footer-column">
@@ -149,6 +160,7 @@
 
     </footer>
 
+    
 </body>
 
 </html>
