@@ -153,7 +153,7 @@ img {
 /* HEADER */
 
 .topbar {
-    
+
     text-transform: uppercase;
     text-align: center;
 }
@@ -505,13 +505,8 @@ td {
 }
 
 .section-reserved select {
-    background: 
-        #364e58 
-        no-repeat 
-        right 
-        0.5rem 
-        center 
-        url(./public/assets/img/arrow-down.png);
+    background:
+        #364e58 no-repeat right 0.5rem center url(./public/assets/img/arrow-down.png);
     background-size: 15px;
 }
 
@@ -867,7 +862,7 @@ td {
     }
 
     .block-img-mosaik img {
-        width: 275px;
+        width: 200px;
         height: auto;
         margin: 10px 10px;
     }
