@@ -80,22 +80,22 @@ th {
 
 @font-face {
     font-family: 'Trajan Pro Bold';
-    src: url('./public/assets/font/Trajan\ Pro\ Bold.ttf') format('truetype');
+    src: url('../font/Trajan\ Pro\ Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Tahoma Regular';
-    src: url('./public/assets/font/Tahoma.ttf') format('truetype');
+    src: url('../font/Tahoma.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Vilvaldi';
-    src: url('./public/assets/font/Vivaldi.ttf') format('truetype');
+    src: url('../font/Vivaldi.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Trajan Pro Regular';
-    src: url(./public/assets/font/TrajanPro-Regular.ttf) format('truetype');
+    src: url('../font/TrajanPro-Regular.ttf') format('truetype');
 }
 
 /* GENERAL */
@@ -288,7 +288,7 @@ img {
 
 .container-slider {
     padding: 50px 0;
-    background-image: url(./public/assets/img/slider-section.jpg);
+    background-image: url(../img/slider-section.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
