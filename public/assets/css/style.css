@@ -330,7 +330,7 @@ img {
 
 .container-reserve {
     padding: 50px 0;
-    background-image: url(./public/assets/img/reserve-section.jpg);
+    background-image: url(../img/reserve-section.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
