@@ -806,12 +806,12 @@ td {
     }
 
     .logo {
-        width: 200px;
+        width: 150px;
         margin-right: auto;
     }
 
     .nav-item {
-        font-size: 1.5rem;
+        font-size: 1rem;
         display: inline-block;
         margin: 0 10px;
     }
@@ -830,8 +830,8 @@ td {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
     .block-cheffe {
