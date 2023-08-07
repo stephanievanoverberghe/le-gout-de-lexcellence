@@ -142,7 +142,7 @@ a {
 li {
     font-family: "Tahoma Regular";
     color: #ffeaee;
-    font-size: .6rem;
+    font-size: 1rem;
 }
 
 img {
@@ -153,9 +153,13 @@ img {
 /* HEADER */
 
 .topbar {
-    font-size: .75rem;
+    
     text-transform: uppercase;
     text-align: center;
+}
+
+.logo {
+    width: 100px;
 }
 
 .nav-item:hover {
@@ -163,6 +167,7 @@ img {
 }
 
 .nav-item {
+    font-size: 1rem;
     display: block;
     margin: 5px 10px;
     line-height: 1.5;
@@ -547,11 +552,11 @@ td {
 
 .footer-column p,
 .footer-credits p {
-    font-size: .6rem;
+    font-size: 1rem;
 }
 
 .footer-title {
-    font-size: .8rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 0.8rem;
 }
@@ -567,7 +572,7 @@ td {
 }
 
 .footer-credits {
-    font-size: 0.7rem;
+    font-size: .9rem;
     margin-top: .5rem;
 }
 
@@ -578,7 +583,7 @@ td {
 }
 
 .legal-mentions {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
 }
 
 /* SECTION MENTIONS LEGALES */
@@ -806,10 +811,12 @@ td {
     }
 
     .logo {
+        width: 200px;
         margin-right: auto;
     }
 
     .nav-item {
+        font-size: 1.5rem;
         display: inline-block;
         margin: 0 10px;
     }
@@ -824,7 +831,10 @@ td {
 
     /* HOME SECTION */
 
-    .container {
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-left: 150px;
         margin-right: 150px;
     }
