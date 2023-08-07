@@ -230,6 +230,9 @@ img {
 /* HOME SECTION */
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px auto;
     padding: 0 20px;
     max-width: 960px;
@@ -500,13 +503,8 @@ td {
 }
 
 .section-reserved select {
-    background: 
-        #364e58 
-        no-repeat 
-        right 
-        0.5rem 
-        center 
-        url(./public/assets/img/arrow-down.png);
+    background:
+        #364e58 no-repeat right 0.5rem center url(./public/assets/img/arrow-down.png);
     background-size: 15px;
 }
 
@@ -749,9 +747,9 @@ td {
 
     /* SECTION CHEFFE ET SON EQUIPE */
 
-    .section-cheffe {
+    /* .section-cheffe {
         margin: 0 150px;
-    }
+    } */
 
     /* SECTION LEGALS MENTIONS */
 
@@ -825,8 +823,8 @@ td {
     /* HOME SECTION */
 
     .container {
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
     .block-cheffe {
